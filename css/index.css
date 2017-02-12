@@ -151,3 +151,9 @@ a:focus, a:hover{
 .textbold{
 	font-weight:500;
 }
+.paddingnt20{
+	padding:0 20px 0 20px;
+}
+.paddingnd20{
+	padding:20px 20px 0 20px;
+}
