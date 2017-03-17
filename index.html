@@ -1,9 +1,17 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="css/index.css" />
+<meta charset="gb2312">
+<link rel="stylesheet" type="text/css" href="css/index.css">
 <title>Teng Tou's home page</title>
+<script type="text/javascript">
+var mail = "gratubh@ubgznvy.pbz"
+String.prototype.rot13 = function(){
+	return this.replace(/[a-zA-Z]/g, function(c){
+		return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26);
+	});
+};
+</script>
 </head>
 <body>
 <div class="container boxShadowBottom whiteBackground">
@@ -14,8 +22,9 @@
 		<h1 class="name">
 			<a class="link" href="http://tenghou.info" title="Go to the profile of Teng Hou">Teng Hou</a>
 		</h1>
-		<p class="info maxWidth350">I am interested in Ph.D. program in computer science.<br/>
-		<b>Email : <a href="mailto:tenghou@hotmail.com"></b>tenghou <b>at</b> hotmail <b>dot</b> com</a></p>
+		<p class="info maxWidth350">I am interested in Ph.D. program in computer science.<br/>		
+		<script type="text/javascript">document.write("<b>Email : </b><a href=\"mailto:", mail.rot13(), "\">", mail.rot13(),"\</a>");</script>
+		</p>
 	</header>
 	<div class="header-bottom"></div>
 </div>
